@@ -14,7 +14,7 @@ $(function() {
     $('.header-mobile .menu img').click(function () {
         $('.mobileNav').css('display','block')
     });
-    $('.CloseMobileNav').click(function () {
+    $('.CloseMobileNav img').click(function () {
         $('.mobileNav').css('display','none')
     });
     // Iterate over each select element
