@@ -4,13 +4,18 @@
 /*==========  Desktop First  ==========*/
 
 //DEFAULT MEDIA
-@media only screen and (min-width : 1650px)
-  .menu1
-    margin-left: 10%
+
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1200px)
-	/**/
+  .menu1
+    width: 26%
+  .menu2
+    width: 28%
+  .menu3
+    width: 22%
+  .menu4
+    width: 22%
 
 
 /* Medium Devices, Desktops */
@@ -22,12 +27,6 @@
       margin-right: 5px
     .circle
       font-size: 12px
-
-    div
-      padding: 0
-      &:not(:first-child)
-        width: 20%
-        padding-top: 10px
     .logo
       line-height: 1.3
       width: 20%
@@ -45,7 +44,10 @@
   .payments-get
     button
       padding: 7px 17px
-
+  .pocket
+    padding-top: 9px
+  .menu3
+    width: 25%
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
   .header-mobile
@@ -58,10 +60,8 @@
       span
         font-size: 25px
     .menu
-      i
-        font-size: 25px
-        color: #868686
-        cursor: pointer
+      img
+        width: 29px
     .avatar
       i
         font-size: 25px
@@ -74,6 +74,8 @@
       font-size: 25px
   .footer-wrapper
     padding: 0 5px
+  .payment-item
+    padding-left: 10px!important
   .payment-choose
     text-align: left!important
     button
@@ -104,11 +106,9 @@
     text-align: center
     max-width: 20%
     padding: 0
-  .wrapperEvro
-    padding-left: 25%
+
   .evroMobile
-    width: 78%
-    padding-left: 40px!important
+
   .mobileNav
     display: none
     color: white
@@ -134,7 +134,7 @@
         padding: 13px 10px
         max-width: 100%
         &:hover
-          border-top: 3px solid #00acee
+          border-top: none
         &:hover
           a
             color: #00acee
@@ -150,13 +150,48 @@
       background-image: url(../img/03Mobile.svg)
     .item4
       background-image: url(../img/04Mobile.svg)
-
+.footer-top-mobile
+  .container
+    padding: 0
 /* Extra Small Devices, Phones */
+@media only screen and (max-width : 620px)
+  .logoEvro
+    img
+      width: 55px
+  .evroMobile
+    padding-right: 0
+    span
+      display: block
+      color: #667c87
+      &:first-child
+        font-size: 25px!important
+        line-height: 1.1
+      &:nth-child(2)
+        font-size: 9px!important
+        padding-left: 6px
 @media only screen and (max-width : 480px)
-	.wrapperEvro
-      padding-left: 2%
+  .wrapperEvro
+    padding-right: 0
+    padding-left: 10px
+  .social-mobile
+    img
+      width: 20px!important
 
-
+  .evroMobile
+    padding-right: 0
+    span
+      display: block
+      color: #667c87
+      &:first-child
+        font-size: 22px!important
+        line-height: 1.1
+      &:nth-child(2)
+        font-size: 8px!important
+        padding-left: 6px
+  .logoEvro
+    max-width: 20%
+    img
+      width: 40px!important
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px)
 	/**/
@@ -170,6 +205,10 @@
 
 
 /* Extra Small Devices, Phones */
+@media only screen and (min-width : 565px)
+  .social-mobile
+    img
+      margin: 0 4px
 @media only screen and (min-width : 480px)
 	/**/
 
@@ -181,23 +220,12 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px)
-  .count
-    display: none
-  .logo
-    width: 20%
-  .menu1
-    width: 18%
-  .menu2
-    width: 23%
+  /**/
+
 @media only screen and (min-width : 1350px)
   .count
     display: block
-  .logo
-    width: 16.66666667%
-  .menu1
-    width: 16.66666667%
-  .menu2
-    width: 16.66666667%
+
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px)
 	/**/

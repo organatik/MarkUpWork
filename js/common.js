@@ -7,10 +7,11 @@ $(function() {
     $(".ToglleDrop").click(function () {
         $( this ).children('ul').slideToggle();
         $('.drop-menu').slideToggle();
+        $( this ).children('i').toggleClass('openCaret');
         return false;
     
     });
-    $('.header-mobile .menu i').click(function () {
+    $('.header-mobile .menu img').click(function () {
         $('.mobileNav').css('display','block')
     });
     $('.CloseMobileNav').click(function () {
